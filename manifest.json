@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+  "name": "Chrome tab cycle",
+  "description": "Allows to cycle over tabs in a window in specified intervals",
+  "version": "0.0.1",
+  "author": "Pawel Kacprzak",
+  "browser_action": {
+    "default_icon": "images/icon-128.png",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "tabs",
+    "storage"
+  ],
+  "options_page": "options.html",
+  "background": {
+    "persistent": true,
+    "scripts": [ "background.js"]
+  },
+  "icons": {
+    "128": "images/icon-128.png"
+  }
+}
